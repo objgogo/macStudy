@@ -1,0 +1,19 @@
+server:
+    port:8080
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/study?serverTimezone=UTC&characterEncoding=UTF-8&autoReconnect=true
+        username: root
+        password: 1234
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        open-in-view: false
+        hibernate:
+            ddl-auto: none #update
+            use-new-id-generator-mappings: false
+
+
+
+
+
