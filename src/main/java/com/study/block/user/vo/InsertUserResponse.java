@@ -9,6 +9,7 @@ import lombok.ToString;
 
 @Getter
 @Setter
+@AllArgsConstructor
 @ToString
 public class InsertUserResponse {
 
@@ -24,10 +25,5 @@ public class InsertUserResponse {
   @ApiModelProperty(value = "사용자 Email", example="jidpara@abc.com")
   private String email;
 
-  public InsertUserResponse(Integer id, String userId, String name, String email) {
-    this.id = id;
-    this.userId = userId;
-    this.name = name;
-    this.email = email;
-  }
+
 }
