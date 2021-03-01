@@ -30,4 +30,14 @@ public class LoginController {
     return loginService.login(request);
   }
 
+  @PostMapping("/create/auth-string")
+  @ApiOperation(value = "인증 문자열 생성(6자리) API", notes = "랜덤 문자열 생성 API")
+  public String createAuthString(){
+    return loginService.createAuthString();
+  }
+
+
+
+
+
 }

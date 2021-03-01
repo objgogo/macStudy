@@ -3,9 +3,9 @@ server:
 spring:
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/study?serverTimezone=UTC&characterEncoding=UTF-8&autoReconnect=true
+        url: jdbc:mysql://localhost:3306/study?serverTimezone=UTC&characterEncoding=UTF-8&autoReconnect=true&allowPublicKeyRetrieval=true
         username: root
-        password: 1234
+        password: 1q2w3e4r
     jpa:
         database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
         open-in-view: false
